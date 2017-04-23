@@ -102,7 +102,7 @@ def getData():
 	
 	output = { "rp_output": rec_prompts[:4], "wc_output": wc_output }
 	
-	limit = 10
+	limit = 4
 	
 	#Clear Caches
 	if len(rec_prompts) > limit or prompt_len > 1500:
