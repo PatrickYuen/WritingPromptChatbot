@@ -1,0 +1,15 @@
+#RPCont {
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 270px;
+	height: 375px;
+}
+
+#WCCont {
+	float: right;
+	padding: 5px;
+	width: 400px;
+}
