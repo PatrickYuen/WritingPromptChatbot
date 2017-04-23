@@ -79,7 +79,7 @@ def get_random_wp(info):
 	posts = [x for x in wp_subreddit.search(query=info, limit=5) if x.title.startswith('[WP]')]			
 				
 	if len(posts) == 0:
-		return "Your idea is too weird ..."
+		return "[WP]Your idea is too weird ..."
 		
 	chosen_post = random.choice(posts).title
 	

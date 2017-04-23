@@ -69,7 +69,7 @@ function updatePrompts(recPrompts) {
 	$('#PromptList').hide().fadeOut( 1500, function() {
 		$('#PromptList').remove();
 		
-		var ul = $("<ul id=\"PromptList\" class=\"text-left\" style=\"margin-top:20px;padding-left:5px;overflow:hidden;\">" );
+		var ul = $("<ul id=\"PromptList\" class=\"text-left\" style=\"margin-top:20px;padding-left:5px;overflow:scroll;\">" );
 		// iterate over the array and build the list
 		for (var i = 0; i < recPrompts.length; ++i) {
 			ul.append("<li style=\"margin:5px;\">" + recPrompts[i] + "</li>");
