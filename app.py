@@ -102,12 +102,12 @@ def getData():
 	
 	output = { "rp_output": rec_prompts[:4], "wc_output": wc_output }
 	
-	limit = 3
+	limit = 10
 	
 	#Clear Caches
-	if len(rec_prompts) > limit or prompt_len > 300:
+	if len(rec_prompts) > limit or prompt_len > 1500:
 		word_counts = {} 
-		rec_prompts = rec_prompts[-(min(len(rec_prompts) - 1, limit - 1)):]
+		rec_prompts = rec_prompts[-(limit - 1):]
 		for sent in rec_prompts:
 			word_counts_update(sent[4:])
 	
